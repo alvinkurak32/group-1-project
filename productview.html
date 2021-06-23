@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- MaterializeCSS Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Product</title>
+
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="container">
+            <!-- shoes with description -->
+           <div class="row">
+             <div class="col s5">
+               <img src="./image/1.jpg" height="100%" width="100%">
+             </div>  
+           <!-- descriotion of shoes -->
+             <div class="col s7 offset-5">
+                 <p>Keeping the original ripple design inspired by Japanese bullet trains, 
+                   the Nike Air Max 97 lets you push your style full-speed ahead.
+                   We took the revolutionary full-length Nike Air unit that shook up the running world 
+                   and added fresh denim textures and crisp detailing to help you ride in first-class comfort.</p>
+                   <br><br>
+                   <li>Colour Shown: Dark Smoke Grey/Black/Smoke Grey/Dark Smoke Grey</li>   
+                   <li>Style: DJ4643-070</li>
+                   <li style="color: red;">Price: $459</li>
+                   <br><br><br><br><br>
+               <div class="box"><a onclick="M.toast({html: 'Added to Cart!'})" class="btn red">Add to Cart</a>
+               </div>
+             </div>                              
+           </div>
+         </div>
+         <br><br><br>
+         <div class="container">
+            <h1 class="">Recommended</h1>
+            <div class="row">
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+            </div>    
+            </div>
+            
+            <div class="container">
+            <div class="row">
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="">
+                  <img src="./image/6.jpg" height="100%" width="100%">  
+                </div>
+              </div>
+            </div>    
+            </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('#header').load("./views/layouts/header.html");
+        $('#main').load("./views/layouts/main.html");
+        $('#footer').load("./views/layouts/footer.html");
+        $('#banner').load("./views/layouts/banner.html");
+        $('#announcement').load("./views/layouts/announcement.html");
+        $('#banner').load("./views/layouts/banner.html");
+        
+    </script>
+</body>
+
+</html>

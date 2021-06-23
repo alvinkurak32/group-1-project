@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- MaterializeCSS Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>G1 Shoe Club</title>
+
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <br><br>
+        <div id="announcement"> </div>
+        <div id="banner"></div>
+        <div id="grid"></div>
+        <div id="main"></div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('#header').load("./views/layouts/header.html");
+        $('#main').load("./views/layouts/main.html");
+        $('#footer').load("./views/layouts/footer.html");
+        $('#banner').load("./views/layouts/banner.html");
+        $('#announcement').load("./views/layouts/announcement.html");
+        $('#banner').load("./views/layouts/banner.html");
+       // $('#grid').load("grid.html");
+        
+    </script>
+</body>
+
+</html>

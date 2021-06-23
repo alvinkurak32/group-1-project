@@ -1,0 +1,25 @@
+<!-- Announcement -->
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+  <div class="modal-content center">
+    <h4>Father's Day Sale</h4>
+    <img width="50%" height="50%" src="image/banner3.jpg">
+    <p class="flow-text">
+      The quick brown fox jumps over the lazy dog
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-large red">Close</a>
+  </div>
+</div>
+
+<script>
+     $(document).ready(function(){
+    $('.modal').modal({
+        dismissible: false,
+    });
+    $('#modal1').modal('open'); 
+
+  });
+</script>

@@ -1,0 +1,144 @@
+
+<nav class="nav-extended  white">
+    <div class="nav-wrapper black">
+        <div class="container">
+            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <form>
+                        <div class="input-field nav-wrapper">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+                <li><a class="btn waves-effect waves-light modal-trigger" href="#login">Login</a>
+                    <div id="login" class="modal modal-fixed-footer"
+                        <a class="modal-close btn">&#10005;</a>
+                        <div class="modal-content center col s6">
+                            <h4 class="black-text">Login</h4>
+                            <div class="row">
+                                <form action="#">
+
+                                    <div class="input-field">
+                                      <i class="material-icons prefix">person</i>
+                                      <input type="text" id="name">
+                                      <label for="name">Username</label>
+                                    </div>
+                                    <br>
+                              
+                                    <div class="input-field">
+                                      <i class="material-icons prefix">lock</i>
+                                      <input type="password" id="pass">
+                                      <label for="pass">Password</label>
+                                    </div>
+                                    <br>
+                              
+                                    <div class="center" style="margin-left:20px;">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Remember Me</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="submit" value="Login" class="btn btn-large">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-large red">Cancel</a>
+                                  </form>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <!-- Modal Button -->
+                    <a class="waves-effect waves-light btn modal-trigger" href="#register">Register</a>
+
+                    <!-- Modal Body -->
+                    <div id="register" class="modal">
+                        <div class="modal-content">
+                        <h4 class="black-text">Register</h4>
+                        <div class="col s6">
+                            <form class="">
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="Name" type="text" class="validate">
+                            <label for="Name">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                            <input id="Email" type="email" class="validate">
+                            <label for="Email">Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                            <input id="Phone" type="text" class="validate">
+                            <label for="Phone">Phone</label>
+                            </div>
+                            <div class="input-field col s12">
+                            <input id="Password" type="password" class="validate">
+                            <label for="Password">Password</label>
+                            </div>
+                            <div class="input-field col s12">
+                            <input id="CnfPassword" type="password" class="validate">
+                            <label for="CnfPassword">Confirm Password</label>
+                            </div>
+                            <div class="input-field col s12 center">
+                            <button type="submit" class="waves-effect waves-light btn-large">Register</button>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-large red">Close</a>
+                            </div>        
+                        </div>	
+                        </form>
+                        </div>
+                        </div>
+                    </div> 
+                </li>
+
+                <li><i class="material-icons btn transparent sidenav-trigger" href="#cart">shopping_cart</i>
+                    <div id="cart" class="sidenav ">
+                        <div class="modal-content">
+                        <h4>Cart</h4>
+                        <p>A bunch of text</p>
+                        </div>
+                        <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="nav-content container"> 
+            <ul class="tabs tabs-transparent">
+              <li id="tab-men" class="tab col s4" ><a href="#tab-men" style="color:black">Men</a></li>
+              <li id="tab-women" class="tab col s4"><a href="#tab-women" style="color:black">Women</a></li>
+              <li id="tab-kids" class="tab col s4"><a href="#tab-kids" style="color:black">Kids</a></li>
+            </ul>
+            <div id="tab-men">
+    
+            </div>
+            <div id="tab-women">
+    
+            </div>
+            <div id="tab-kids">
+    
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(function(){
+    $('#login').modal({dismissible: true});
+    $('#register').modal({dismissible: false,});
+    $('#cart').sidenav({
+        edge: 'right',
+        dismissible: 'false'
+    });
+    
+    });
+    
+</script>
+
+
